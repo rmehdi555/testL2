@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('Admin.panel');
 });
+
+Route::group(['prefix'=>'admin','namespace'=>'Admin'],function (){
+
+   Route::resource('articles','ArticleController');
+
+});
