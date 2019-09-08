@@ -20,7 +20,7 @@ class CreateArticlesTable extends Migration
             $table->string('slug');
             $table->text('description');
             $table->text('body');
-            $table->string('imageUrl');
+            $table->text('images');
             $table->string('tags');
             $table->bigInteger('viewCount')->default(0);
             $table->bigInteger('commentCount')->default(0);

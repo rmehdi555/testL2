@@ -9,6 +9,7 @@ class Article extends Model
 {
     //
     use Sluggable;
+    protected $guarded=[];
 
 
     /**
